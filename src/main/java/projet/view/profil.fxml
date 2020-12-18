@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="330.0" prefWidth="655.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projet.controller.ProfilController">
+   <children>
+      <TextField fx:id="nomtfd" layoutX="11.0" layoutY="77.0" prefHeight="25.0" prefWidth="179.0" />
+      <Label layoutX="14.0" layoutY="41.0" prefHeight="17.0" prefWidth="92.0" text="Nom" />
+      <TableView fx:id="tableprofil" layoutX="341.0" layoutY="89.0" onMouseClicked="#click" prefHeight="240.0" prefWidth="310.0">
+        <columns>
+          <TableColumn fx:id="idclonne" prefWidth="129.0" text="Identifient" />
+            <TableColumn fx:id="nomcolonne" prefWidth="266.0" text="Nom" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnajout" layoutX="4.0" layoutY="271.0" mnemonicParsing="false" onAction="#Ajout" prefHeight="25.0" prefWidth="83.0" style="-fx-background-color: #00FF00;" text="Ajout" textFill="#fefefe">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button fx:id="btnmodifier" layoutX="126.0" layoutY="271.0" mnemonicParsing="false" onAction="#update" onMouseClicked="#click" prefHeight="25.0" prefWidth="83.0" style="-fx-background-color: #FFCB60;" text="Modifier" textFill="#fefefe">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button fx:id="btnbloque" layoutX="245.0" layoutY="271.0" mnemonicParsing="false" onAction="#boloque" prefHeight="25.0" prefWidth="83.0" style="-fx-background-color: #E73E01;" text="Suppriùer" textFill="#fefefe">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Pane layoutX="4.0" layoutY="-7.0" prefHeight="39.0" prefWidth="647.0" style="-fx-background-color: #6600FF;">
+         <children>
+            <Label layoutX="201.0" layoutY="4.0" prefHeight="17.0" prefWidth="211.0" text="Gestion Des Profiles" textFill="#fefefe">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <ComboBox fx:id="cbbadmin" layoutX="10.0" layoutY="124.0" prefHeight="25.0" prefWidth="185.0" />
+   </children>
+</AnchorPane>

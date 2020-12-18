@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="515.0" prefWidth="1298.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projet.controller.StockController">
+   <children>
+      <Label layoutX="8.0" layoutY="151.0" prefHeight="17.0" prefWidth="92.0" text="Produit " />
+      <TableView fx:id="tablestock" layoutX="405.0" layoutY="151.0" onMouseClicked="#click" prefHeight="360.0" prefWidth="892.0">
+        <columns>
+          <TableColumn fx:id="idcolonne" prefWidth="82.0" text="Identifient" />
+            <TableColumn fx:id="libcolonne" prefWidth="142.0" text="Libelle Produit Acheter" />
+            <TableColumn fx:id="datecolonne" prefWidth="148.0" text="Date D'enrigistrment" />
+            <TableColumn fx:id="pucolonne" prefWidth="157.0" text="Prix unitare" />
+            <TableColumn fx:id="qtecolonne" prefWidth="152.0" text="Qentite Acheter" />
+            <TableColumn fx:id="totalcolonne" prefWidth="208.0" text="Total" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnajouter" layoutX="13.0" layoutY="385.0" mnemonicParsing="false" onAction="#add" prefHeight="25.0" prefWidth="83.0" style="-fx-background-color: #00FF00;" text="Ajouter" textFill="#fefefe">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button fx:id="btnupdate" layoutX="270.0" layoutY="385.0" mnemonicParsing="false" onAction="#update" prefHeight="25.0" prefWidth="83.0" style="-fx-background-color: #FFCB60;" text="Modifier" textFill="#fefefe">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button fx:id="btnSupprimer" layoutX="13.0" layoutY="471.0" mnemonicParsing="false" onAction="#delete" prefHeight="30.0" prefWidth="92.0" style="-fx-background-color: #E73E01;" text="Supprimer" textFill="#fefefe">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button fx:id="btnchoisir" layoutX="270.0" layoutY="471.0" mnemonicParsing="false" onAction="#select" prefHeight="30.0" prefWidth="83.0" style="-fx-background-color: #6600FF;" text="Actualiser" textFill="#fefefe">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Label layoutX="210.0" layoutY="151.0" prefHeight="17.0" prefWidth="119.0" text="Quantiter " />
+      <Pane layoutX="1.0" prefHeight="42.0" prefWidth="1298.0" style="-fx-background-color: #6600FF;">
+         <children>
+            <Label layoutX="473.0" layoutY="5.0" prefHeight="32.0" prefWidth="257.0" text="Gestion Des Achats" textFill="#fefefe">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Button fx:id="btnrechercher" layoutX="978.0" layoutY="93.0" mnemonicParsing="false" onAction="#rechercher" prefHeight="30.0" prefWidth="104.0" text="Rechercher">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="1195.0" layoutY="61.0" prefHeight="17.0" prefWidth="92.0" text="Date d'entre" />
+      <ComboBox fx:id="cbbproduit" layoutX="1.0" layoutY="184.0" prefHeight="25.0" prefWidth="179.0" promptText="Produit acheter" />
+      <TextField fx:id="qtetfd" layoutX="210.0" layoutY="184.0" prefHeight="25.0" prefWidth="179.0" promptText="Quantiter Acheter" />
+      <Label layoutX="8.0" layoutY="249.0" prefHeight="17.0" prefWidth="92.0" text="Date" />
+      <DatePicker fx:id="datetfd" layoutX="4.0" layoutY="286.0" promptText="date d'enrigistrement" />
+      <TextField fx:id="putfd" layoutX="203.0" layoutY="286.0" prefHeight="25.0" prefWidth="179.0" promptText="Prix Unitare" />
+      <Label layoutX="203.0" layoutY="249.0" prefHeight="17.0" prefWidth="119.0" text="Prix Unitare" />
+      <ComboBox fx:id="cbbuser" layoutX="2.0" layoutY="83.0" prefHeight="25.0" prefWidth="179.0" promptText="nom du gestionnaire" />
+      <Label layoutX="8.0" layoutY="52.0" prefHeight="17.0" prefWidth="92.0" text="Gestionnaire" />
+      <DatePicker fx:id="dtfd" layoutX="1094.0" layoutY="96.0" prefHeight="25.0" prefWidth="199.0" promptText="date d'entre" />
+      <TextField fx:id="totlaachatfd" layoutX="315.0" layoutY="81.0" prefHeight="25.0" prefWidth="174.0" promptText="TOTAL ACHAT DU JOUR" />
+      <Label layoutX="315.0" layoutY="52.0" prefHeight="17.0" prefWidth="174.0" text="TOTAL ACHAT DU JOUR" />
+      <TextField fx:id="nombretfd" layoutX="566.0" layoutY="81.0" prefHeight="25.0" prefWidth="104.0" promptText="nombre d'achat" />
+      <Label layoutX="566.0" layoutY="52.0" prefHeight="17.0" prefWidth="92.0" text="nombre d'achat" />
+   </children>
+</AnchorPane>

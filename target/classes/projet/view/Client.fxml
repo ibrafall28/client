@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane minHeight="-Infinity" prefHeight="601.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projet.controller.ClientController">
+   <children>
+      <Label layoutX="8.0" layoutY="151.0" prefHeight="17.0" prefWidth="92.0" text="Nom" />
+      <TableView fx:id="tableclient" layoutX="572.0" layoutY="260.0" onMouseClicked="#click" prefHeight="337.0" prefWidth="743.0">
+        <columns>
+          <TableColumn fx:id="numfaccolonne" prefWidth="118.0" text="Numeo client" />
+            <TableColumn fx:id="nomclientcolonne" prefWidth="174.0" text="nom client" />
+            <TableColumn fx:id="adressecolonne" prefWidth="199.0" text="Adresse" />
+            <TableColumn fx:id="telcolonne" prefWidth="251.0" text="telephone" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnenrigisrer" layoutX="13.0" layoutY="479.0" mnemonicParsing="false" onAction="#save" prefHeight="30.0" prefWidth="99.0" style="-fx-background-color: #00FF00;" text="Enrigistrer" textFill="#fefefe">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button fx:id="btnmodifier" layoutX="177.0" layoutY="479.0" mnemonicParsing="false" onAction="#update" prefHeight="30.0" prefWidth="112.0" style="-fx-background-color: #FFCB60;" text="Modifier" textFill="#fefefe">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button fx:id="btndelate" layoutX="19.0" layoutY="560.0" mnemonicParsing="false" onAction="#delete" prefHeight="30.0" prefWidth="92.0" style="-fx-background-color: #E73E01;" text="Sipprimer" textFill="#fefefe">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button fx:id="btnchoix" layoutX="176.0" layoutY="560.0" mnemonicParsing="false" onAction="#select" prefHeight="30.0" prefWidth="112.0" style="-fx-background-color: #6600FF;" text="Actualiser" textFill="#fefefe">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Label layoutX="8.0" layoutY="61.0" prefHeight="17.0" prefWidth="92.0" text="CNI" />
+      <Pane layoutY="-7.0" prefHeight="42.0" prefWidth="1320.0" style="-fx-background-color: #6600FF;">
+         <children>
+            <Label layoutX="301.0" layoutY="5.0" prefHeight="32.0" prefWidth="311.0" text="Gestion Des Clients" textFill="#fefefe">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <TextField fx:id="recherchertdf" layoutX="1144.0" layoutY="80.0" prefHeight="30.0" prefWidth="174.0" promptText="rechercher" />
+      <Button fx:id="btnrechercher" layoutX="992.0" layoutY="80.0" mnemonicParsing="false" onAction="#rechercher" prefHeight="30.0" prefWidth="145.0" text="rechercher">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="1142.0" layoutY="53.0" prefHeight="17.0" prefWidth="92.0" text="numero client" />
+      <TextField fx:id="cnitfd" layoutX="3.0" layoutY="95.0" prefHeight="25.0" prefWidth="174.0" promptText="carte d'identite" />
+      <TextField fx:id="nomtfd" layoutX="7.0" layoutY="176.0" prefHeight="25.0" prefWidth="174.0" promptText="nom client" />
+      <Label layoutX="14.0" layoutY="230.0" prefHeight="17.0" prefWidth="92.0" text="Telephone" />
+      <TextField fx:id="prenomtfd" layoutX="199.0" layoutY="95.0" prefHeight="25.0" prefWidth="153.0" promptText="prenom client" />
+      <Label layoutX="199.0" layoutY="61.0" prefHeight="17.0" prefWidth="92.0" text="Prenom" />
+      <TextField fx:id="adressetfd" layoutX="207.0" layoutY="176.0" prefHeight="25.0" prefWidth="145.0" promptText="adresse client" />
+      <Label layoutX="209.0" layoutY="151.0" prefHeight="17.0" prefWidth="92.0" text="Adresse" />
+      <TextField fx:id="teltfd" layoutX="12.0" layoutY="258.0" prefHeight="25.0" prefWidth="161.0" promptText="telephone client" />
+      <Label layoutX="209.0" layoutY="230.0" prefHeight="17.0" prefWidth="92.0" text="Code Postal" />
+      <ComboBox fx:id="cbbgestionnaire" layoutX="10.0" layoutY="360.0" prefHeight="25.0" prefWidth="161.0" promptText="gestionnaire" />
+      <Label layoutX="14.0" layoutY="325.0" prefHeight="17.0" prefWidth="92.0" text="gestionnaire" />
+      <TextField fx:id="codetfd" layoutX="202.0" layoutY="258.0" prefHeight="25.0" prefWidth="161.0" promptText="code postal" />
+   </children>
+</AnchorPane>

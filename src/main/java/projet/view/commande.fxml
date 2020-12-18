@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="601.0" prefWidth="1187.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projet.controller.CommandeController">
+   <children>
+      <Button fx:id="btnajout" layoutX="22.0" layoutY="504.0" mnemonicParsing="false" onAction="#save" prefHeight="25.0" prefWidth="83.0" style="-fx-background-color: #00FF00;" text="Enristerer" textFill="#fefefe">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button fx:id="btnmodifier" layoutX="177.0" layoutY="501.0" mnemonicParsing="false" onAction="#update" prefHeight="30.0" prefWidth="112.0" style="-fx-background-color: #FFCB60;" text="Modifier" textFill="#fefefe">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button fx:id="btnsuprimer" layoutX="19.0" layoutY="560.0" mnemonicParsing="false" onAction="#delate" prefHeight="30.0" prefWidth="92.0" style="-fx-background-color: #E73E01;" text="Supprimer" textFill="#fefefe">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button fx:id="btnchoisir" layoutX="176.0" layoutY="560.0" mnemonicParsing="false" onAction="#select" prefHeight="30.0" prefWidth="112.0" style="-fx-background-color: #6600FF;" text="Choisir" textFill="#fefefe">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Label layoutX="232.0" layoutY="122.0" prefHeight="30.0" prefWidth="92.0" text="Produit" />
+      <Pane layoutY="-7.0" prefHeight="42.0" prefWidth="1168.0" style="-fx-background-color: #6600FF;">
+         <children>
+            <Label layoutX="301.0" layoutY="5.0" prefHeight="32.0" prefWidth="270.0" text="Gestion des comandes" textFill="#fefefe">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <TextField fx:id="commtfd" layoutX="976.0" layoutY="80.0" prefHeight="30.0" prefWidth="189.0" promptText="rechercher" />
+      <Button fx:id="btnrechercher" layoutX="819.0" layoutY="80.0" mnemonicParsing="false" onAction="#rechercher" prefHeight="30.0" prefWidth="145.0" text="RECHERCHER">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="1000.0" layoutY="53.0" prefHeight="17.0" prefWidth="92.0" text="Recherche" />
+      <Label layoutX="278.0" layoutY="304.0" prefHeight="30.0" prefWidth="56.0" text="Client" />
+      <DatePicker fx:id="datetfd" layoutX="238.0" layoutY="388.0" prefHeight="25.0" prefWidth="121.0" promptText="date commande" />
+      <Label layoutX="22.0" layoutY="301.0" prefHeight="17.0" prefWidth="145.0" text="Date de la Commande" />
+      <ComboBox fx:id="cbbgesinnaire" layoutX="10.0" layoutY="435.0" prefHeight="30.0" prefWidth="154.0" promptText="gestionnaire" />
+      <Label layoutX="15.0" layoutY="419.0" prefHeight="10.0" prefWidth="92.0" text="gestionnaire" />
+      <ComboBox fx:id="client" layoutX="238.0" layoutY="332.0" prefHeight="25.0" prefWidth="112.0" promptText="client" />
+      <TextField fx:id="qteacheter" layoutX="235.0" layoutY="262.0" prefHeight="25.0" prefWidth="101.0" promptText="Qentite acheter" />
+      <Label layoutX="240.0" layoutY="241.0" prefHeight="17.0" prefWidth="92.0" text="Qentite Acheter" />
+      <Button fx:id="btnchoix" layoutX="15.0" layoutY="103.0" mnemonicParsing="false" onAction="#produitselect" prefHeight="32.0" prefWidth="121.0" text="Choix" />
+      <TableView fx:id="tableachat" layoutX="4.0" layoutY="153.0" prefHeight="260.0" prefWidth="225.0">
+        <columns>
+          <TableColumn fx:id="libachacolonne" prefWidth="143.99998474121094" text="Libelle" />
+          <TableColumn fx:id="qteachatcolonnz" prefWidth="79.0" text="Quentite" />
+        </columns>
+      </TableView>
+      <ComboBox fx:id="cbbproduit" layoutX="229.0" layoutY="153.0" prefHeight="25.0" prefWidth="101.0" promptText="produit" />
+      <Label layoutX="5.0" layoutY="132.0" prefHeight="17.0" prefWidth="83.0" text="Produit" />
+      <Label layoutX="241.0" layoutY="362.0" prefHeight="17.0" prefWidth="112.0" text="Date de livrasion" />
+      <TableView fx:id="tablecommande" layoutX="460.0" layoutY="279.0" prefHeight="294.0" prefWidth="674.0">
+        <columns>
+          <TableColumn fx:id="numcolonne" prefWidth="191.0" text="Numero" />
+          <TableColumn fx:id="nomcolonne" prefWidth="180.0" text="Utilisateur" />
+            <TableColumn fx:id="datecolonne" prefWidth="175.0" text="Date de livraision" />
+            <TableColumn fx:id="etatcolonne" prefWidth="127.0" text="etat" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

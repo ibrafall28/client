@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="624.0" prefWidth="1039.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projet.controller.MenuController">
+   <top>
+      <Pane prefHeight="124.0" prefWidth="1031.0" style="-fx-background-color: #0000FF;" BorderPane.alignment="CENTER">
+         <children>
+            <MenuBar accessibleRole="DATE_PICKER" layoutY="70.0" prefHeight="36.0" prefWidth="1041.0">
+              <menus>
+                <Menu fx:id="admin" mnemonicParsing="false" text="ADMINISTRATEUR">
+                  <items>
+                    <MenuItem fx:id="profile" mnemonicParsing="false" onAction="#loadProfil" text="Profil" />
+                        <MenuItem fx:id="user" mnemonicParsing="false" onAction="#loadUser" text="Utilisateur" />
+                        <MenuItem fx:id="produit" mnemonicParsing="false" onAction="#loadProduit" text="Produit" />
+                  </items>
+                </Menu>
+                <Menu fx:id="gestionvente" mnemonicParsing="false" text="GESTION DES VENTES">
+                  <items>
+                    <MenuItem fx:id="itmvente" mnemonicParsing="false" onAction="#loadachat" text="Achat" />
+                        <MenuItem fx:id="itmstock" mnemonicParsing="false" onAction="#loadstock" text="Stock" />
+                  </items>
+                </Menu>
+                <Menu fx:id="gestioncommande" mnemonicParsing="false" text="GESTION DES COMMANDES">
+                  <items>
+                    <MenuItem fx:id="itmcommand" mnemonicParsing="false" onAction="#loadcommand" text="Commande" />
+                  </items>
+                </Menu>
+                  <Menu fx:id="gestionfac" mnemonicParsing="false" text="GESTION DES FACTURES">
+                     <items>
+                        <MenuItem fx:id="itmpersonne" mnemonicParsing="false" onAction="#loadfacturespersonne" text="facture" />
+                     </items>
+                  </Menu>
+                  <Menu fx:id="statistique" mnemonicParsing="false" text="STATIQTIQUE">
+                     <items>
+                        <MenuItem fx:id="itmbilaninitial" mnemonicParsing="false" onAction="#loadbilaninitial" text="Bilan initial" />
+                        <MenuItem fx:id="itmbilanfinal" mnemonicParsing="false" onAction="#loadbilanfinal" text="Bilan final" />
+                     </items>
+                  </Menu>
+                  <Menu fx:id="prametrage" mnemonicParsing="false" text="DECONNEXION">
+                     <items>
+                        <MenuItem fx:id="itemparametrage" mnemonicParsing="false" onAction="#loadparaetrages" text="Deconnecter" />
+                     </items>
+                  </Menu>
+              </menus>
+            </MenuBar>
+            <ImageView fitHeight="34.0" fitWidth="38.0" layoutX="31.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/icons8_Person_32px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="33.0" fitWidth="75.0" layoutX="333.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/icons8_Open_Envelope_32px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="28.0" fitWidth="33.0" layoutX="168.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/icons8_Box_32px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="33.0" fitWidth="75.0" layoutX="603.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/icons8_Search_52px.png" />
+               </image>
+            </ImageView>
+            <VBox layoutX="3.0" layoutY="139.0" prefHeight="200.0" prefWidth="100.0" />
+            <Label layoutX="755.0" layoutY="20.0" prefHeight="31.0" prefWidth="205.0" text="     Bichri Informatuqe" textFill="WHITE">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="67.0" fitWidth="86.0" layoutX="974.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/machine.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="33.0" fitWidth="75.0" layoutX="490.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/icons8_Open_Envelope_32px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="33.0" fitWidth="75.0" layoutX="689.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/icons8_Slider__32px.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="datjourtfd" layoutX="5.0" layoutY="8.0" prefHeight="25.0" prefWidth="185.0" />
+         </children></Pane>
+   </top>
+</BorderPane>

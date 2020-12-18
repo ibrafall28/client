@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="458.0" prefWidth="763.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projet.controller.FactureController">
+   <children>
+      <Pane prefHeight="41.0" prefWidth="763.0" style="-fx-background-color: #6600FF;">
+         <children>
+            <Label layoutX="258.0" layoutY="12.0" prefHeight="17.0" prefWidth="215.0" text="     Facturation " textFill="#fefefe">
+               <font>
+                  <Font size="22.0" />
+               </font></Label>
+         </children></Pane>
+      <Label layoutX="104.0" layoutY="68.0" prefHeight="17.0" prefWidth="87.0" text="Date " />
+      <Label layoutX="341.0" layoutY="68.0" prefHeight="17.0" prefWidth="174.0" text="Commande" />
+      <Label layoutX="599.0" layoutY="77.0" prefHeight="17.0" prefWidth="81.0" text="Gestionnaire" />
+      <DatePicker fx:id="datfacture" layoutX="104.0" layoutY="99.0" promptText="date de facturation" />
+      <ComboBox fx:id="cbbcommande" layoutX="341.0" layoutY="99.0" prefHeight="25.0" prefWidth="207.0" promptText="commade" />
+      <ComboBox fx:id="cbbgestionnaire" layoutX="599.0" layoutY="99.0" prefWidth="150.0" promptText="signature" />
+      <TableView fx:id="tablefacture" layoutX="12.0" layoutY="244.0" prefHeight="200.0" prefWidth="741.0">
+        <columns>
+          <TableColumn fx:id="nucolonne" prefWidth="150.0" text="numero factue" />
+          <TableColumn minWidth="0.0" prefWidth="0.0" text="C2" />
+            <TableColumn fx:id="datecolonne" prefWidth="334.0" text="Date facture" />
+            <TableColumn fx:id="commandecolonne" prefWidth="251.0" text="Commande" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnenrigister" layoutX="33.0" layoutY="189.0" mnemonicParsing="false" onAction="#enrigistrer" prefHeight="41.0" prefWidth="158.0" style="-fx-background-color: #00FF00;" text="Enrigistrer" textFill="#fefefe">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

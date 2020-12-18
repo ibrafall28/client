@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="433.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projet.controller.LoginController">
+   <children>
+      <BorderPane layoutX="-3.0" layoutY="2.0" prefHeight="433.0" prefWidth="600.0">
+         <left>
+            <Pane prefHeight="433.0" prefWidth="163.0" style="-fx-background-color: #0000FF;" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="9.0" layoutY="119.0" pickOnBounds="true" preserveRatio="true" />
+               </children></Pane>
+         </left>
+         <center>
+            <Pane prefHeight="433.0" prefWidth="305.0" style="-fx-background-color: #FFFFFF;" BorderPane.alignment="CENTER">
+               <children>
+                  <TextField fx:id="emailtdf" layoutX="62.0" layoutY="154.0" prefHeight="25.0" prefWidth="228.0" promptText="Adresse Email" />
+                  <PasswordField fx:id="pwdtfd" layoutX="63.0" layoutY="217.0" prefHeight="31.0" prefWidth="230.0" promptText="Mot de Passe" />
+                  <Button fx:id="loginbtn" layoutX="108.0" layoutY="301.0" mnemonicParsing="false" onAction="#login" prefHeight="44.0" prefWidth="143.0" style="-fx-background-color: #0000FF;" text="CONNEXION" textFill="WHITE" />
+                  <Label layoutX="62.0" layoutY="89.0" prefHeight="17.0" prefWidth="127.0" text="CONNEXION">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

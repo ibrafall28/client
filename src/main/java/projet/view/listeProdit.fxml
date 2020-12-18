@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="467.0" prefWidth="753.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projet.controller.BilanController">
+   <children>
+      <TextField fx:id="libtdf" layoutX="14.0" layoutY="38.0" prefHeight="25.0" prefWidth="179.0" promptText="libelle" />
+      <Label layoutX="198.0" layoutY="42.0" prefHeight="17.0" prefWidth="92.0" text="Libelle" />
+      <TableView fx:id="tabeproduit" layoutX="7.0" layoutY="94.0" prefHeight="373.0" prefWidth="445.0">
+        <columns>
+            <TableColumn fx:id="idcolonne" prefWidth="104.0" text="Identifient" />
+            <TableColumn fx:id="libcolonne" prefWidth="159.0" text="Libelle" />
+            <TableColumn fx:id="pucolonne" prefWidth="180.0" text="prix unitaire" />
+        </columns>
+      </TableView>
+      <Pane layoutX="4.0" layoutY="-7.0" prefHeight="39.0" prefWidth="753.0" style="-fx-background-color: #6600FF;">
+         <children>
+            <Label layoutX="271.0" layoutY="3.0" prefHeight="17.0" prefWidth="211.0" text="Stock  Disponible" textFill="#fefefe">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <TextField fx:id="qtedisponibletfd" layoutX="300.0" layoutY="38.0" prefHeight="25.0" prefWidth="179.0" promptText="quantite disponible" />
+      <Label layoutX="497.0" layoutY="42.0" prefHeight="17.0" prefWidth="92.0" text="Quatite" />
+      <Button fx:id="btnRechercher" layoutX="603.0" layoutY="38.0" mnemonicParsing="false" onAction="#rechercher" prefHeight="25.0" prefWidth="120.0" text="Rechercher" />
+      <TextField fx:id="libelle" layoutX="503.0" layoutY="177.0" prefHeight="25.0" prefWidth="162.0" />
+      <TextField fx:id="qtetfd" layoutX="505.0" layoutY="268.0" prefHeight="25.0" prefWidth="168.0" />
+      <Label layoutX="500.0" layoutY="142.0" prefHeight="17.0" prefWidth="162.0" text="     Libelle du Produit" />
+      <Label layoutX="500.0" layoutY="234.0" prefHeight="17.0" prefWidth="162.0" text="      Qentite en Stock" />
+   </children>
+</AnchorPane>
